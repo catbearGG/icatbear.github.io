@@ -3,9 +3,9 @@
 # --------------------------------------
 
 menu:
-# Home: / || fas fa-home
-# Archives: /archives/ || fas fa-archive
-# Tags: /tags/ || fas fa-tags
+  首页: / || fas fa-home
+  时间轴: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
 # Categories: /categories/ || fas fa-folder-open
 # List||fas fa-list:
 #   Music: /music/ || fas fa-music
@@ -16,11 +16,21 @@ menu:
 # Code Blocks (代碼相關)
 # --------------------------------------
 
-highlight_theme: light #  darker / pale night / light / ocean / mac / mac light / false
+highlight_theme: mac #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
-highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
+
+#代码框展开/关闭
+#在默认情况下，代码框自动展开，可设置是否所有代码框都关闭状态，点击>可展开代码
+#true 全部代码框不展开，需点击>打开
+#false 代码框展开，有>点击按钮
+#none 不显示>按钮
+highlight_shrink: false
+
 highlight_height_limit: false # unit: px
+
+#代码换行
+#在默认情况下，Hexo 在编译的时候不会实现代码自动换行。如果你不希望在代码块的区域里有横向滚动条的话，那么你可以考虑开启这个功能。
 code_word_wrap: false
 
 # copy settings
@@ -28,7 +38,7 @@ code_word_wrap: false
 copy:
   enable: true
   copyright:
-    enable: false
+    enable: true
     limit_count: 50
 
 # social settings (社交圖標設置)
@@ -76,7 +86,7 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: /img/favicon.png
+favicon: /img/icon.jpeg
 
 # Avatar (頭像)
 avatar:
@@ -139,7 +149,7 @@ error_404:
 post_meta:
   page: # Home Page
     date_type: created # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
-    date_format: date # date/relative 顯示日期還是相對日期
+    date_format: relative # date/relative 顯示日期還是相對日期
     categories: true # true or false 主頁是否顯示分類
     tags: false # true or false 主頁是否顯示標籤
     label: true # true or false 顯示描述性文字
@@ -191,14 +201,14 @@ post_copyright:
   decode: false
   author_href:
   license: CC BY-NC-SA 4.0
-  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+  license_url: http://blog.maoxiong.love
 
 # Sponsor/reward
 reward:
   enable: false
   QR_code:
   # - img: /img/wechat.jpg
-  #   link:
+  #   link:photofigcaption
   #   text: wechat
   # - img: /img/alipay.jpg
   #   link:
