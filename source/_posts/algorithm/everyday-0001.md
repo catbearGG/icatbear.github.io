@@ -5,7 +5,8 @@ tags:
  - JAVA
  - 算法
 categories: 
- - 算法
+ - 算法 
+top_img: /img/algorithm_top_img.jpg
 ---
 
 ## 题目：找出数组中重复的数字。
@@ -17,7 +18,7 @@ categories:
 > 输入：[2,3,1,0,2,5,3]
 >
 > 输出：2 或 3
-
+### 解：
 ```
 class Solution {
     public int findRepeatNumber(int[] nums) {
@@ -45,4 +46,4 @@ class Solution {
 }
 ```
 ---
-####好好学习，天天向上
+###好好学习，天天向上
