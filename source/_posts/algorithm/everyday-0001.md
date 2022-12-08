@@ -6,7 +6,9 @@ tags:
  - 算法
 categories: 
  - 算法 
-top_img: /img/algorithm_top_img.jpg
+top_img: /img/right_spider_man.jpeg
+cover: /img/algorithm_cover_img.jpg 
+comments: false
 ---
 
 ## 题目：找出数组中重复的数字。
@@ -46,4 +48,4 @@ class Solution {
 }
 ```
 ---
-###好好学习，天天向上
+好好学习，天天向上
