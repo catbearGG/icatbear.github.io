@@ -1,10 +1,14 @@
 ---
-title: 每日一道算法题：「二维数组中的查找」 date: 2022-12-08 18:00:47 tags:
-
+title: 每日一道算法题：「二维数组中的查找」 
+date: 2022-12-09 15:25 
+tags:
 - JAVA
-- 算法 categories:
-- 算法 top_img: /img/right_spider_man.jpeg cover: /img/algorithm_cover_img.jpg comments: false
-
+- 算法 
+categories:
+- 算法 
+top_img: /img/right_spider_man.jpeg 
+cover: /img/algorithm_cover_img.jpg 
+comments: false
 ---
 
 ## 题目：二维数组中的查找
@@ -40,7 +44,7 @@ public boolean findNumberIn2DArray(int[][] matrix, int target) {
     }
 ```
 
-###解：  
+### 解：  
 从矩阵的右上角开始遍历
 ```
 public boolean findNumberIn2DArray(int[][] matrix, int target) {
