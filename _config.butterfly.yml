@@ -435,8 +435,8 @@ messenger:
 footer:
   owner:
     enable: true
-    since: 2020
-  custom_text:
+    since: 2022
+  custom_text: Hi, welcome to my blog
   copyright: true # Copyright of theme and framework
 
 # Analysis
