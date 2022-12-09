@@ -352,9 +352,9 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId:
-  region:
-  visitor: false
+  envId: http://101.42.173.15:9090
+  region: ap-beijing
+  visitor: true
   option:
 
 # Giscus

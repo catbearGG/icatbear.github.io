@@ -8,7 +8,7 @@ categories:
 - 算法 
 top_img: /img/right_spider_man.jpeg 
 cover: /img/algorithm_cover_img.jpg 
-comments: false
+comments: true
 ---
 
 ## 题目：二维数组中的查找
