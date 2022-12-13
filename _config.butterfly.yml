@@ -60,9 +60,15 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
   preload: false
   CDN:
+
+search:
+  path: search.xml
+  field: post
+  content: true
+  template: ./search.xml
 
 # Math (數學)
 # --------------------------------------
