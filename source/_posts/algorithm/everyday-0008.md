@@ -1,63 +1,56 @@
 ---
-title: 每日一道算法题：「两个数组的交集」
-date: 2023-03-14 14:40
+title: 每日一道算法题：「两数之和」
+date: 2023-03-13 12:00
 tags:
+
 - JAVA
 - 算法
-categories:
+  categories:
 - 算法
-top_img: /img/right_spider_man.jpeg
-cover: /img/algorithm_cover_img.jpg
-comments: true
+  top_img: /img/right_spider_man.jpeg
+  cover: /img/algorithm_cover_img.jpg
+  comments: true
 
 ---
 
-## 题目：两个数组的交集
+## 题目：两数之和
 
-### 给你两个整数数组 nums1 和 nums2 ，请你以数组形式返回两数组的交集。返回结果中每个元素出现的次数，应与元素在两个数组中都出现的次数一致（如果出现次数不一致，则考虑取较小值）。可以不考虑输出结果的顺序。
+### 给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target  的那 两个 整数，并返回它们的数组下标
+
+### 你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。
+
+### 你可以按任意顺序返回答案
 
 ### 例1：
 
 ```
-输入：nums1 = [1,2,2,1], nums2 = [2,2]
-输出：[2,2]
+输入：nums = [2,7,11,15], target = 9
+输出：[0,1]
+解释：因为 nums[0] + nums[1] == 9 ，返回 [0, 1] 。
 ```
 
 ### 例2：
 
 ```
-输入：nums1 = [4,9,5], nums2 = [9,4,9,8,4]
-输出：[4,9]
+输入：nums = [3,2,4], target = 6
+输出：[1,2]
 ```
 
 ### 解：
 
+遍历过的结果都存放在map中，之后的每个数都和目标数求差去map中get
+
 ```
-public int[] intersect(int[] nums1, int[] nums2){
-    Arrays.sort(nums1);
-    Arrays.sort(nums2);
-    int i = 0;
-    int j = 0;
-    List<Integer> list = new ArrayList();
-    while( i < nums1.lentsh && j < nums2.length) {
-      int num1 = nums1[i];
-      int num2 = nums2[j];
-      if (num1 < num2){
-        i++;
-      } else if (num1 > num2){
-        j++;
-      } else {
-        list.add(num1);
-        j++;
-        i++;
-      }
+public static int[] twoSum(int[] nums, int target) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            if (map.containsKey(target - nums[i])) {
+                return new int[]{map.get(target - nums[i]), i};
+            }
+            map.put(nums[i], i);
+        }
+        return new int[]{-1, -1};
     }
-    int[] results = new int[list.size()];
-    for(int k = 0; k < list.size(); k++ ){
-      int[k] = list.get(k);
-    }
-    return results;
-}
 ```
 
 ---
