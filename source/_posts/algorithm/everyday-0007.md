@@ -1,15 +1,14 @@
 ---
-title: 每日一道算法题：「移动零」
+title: 每日一道算法题：「两个数组的交集」
 date: 2023-03-14 14:40
 tags:
-
 - JAVA
 - 算法
-  categories:
+categories:
 - 算法
-  top_img: /img/right_spider_man.jpeg
-  cover: /img/algorithm_cover_img.jpg
-  comments: true
+top_img: /img/right_spider_man.jpeg
+cover: /img/algorithm_cover_img.jpg
+comments: true
 
 ---
 
