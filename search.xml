@@ -31,6 +31,33 @@
     
     
     <entry>
+      <title>每日一道算法题：「两数之和」</title>
+      <link href="/2023/03/13/algorithm/everyday-0008/"/>
+      <url>/2023/03/13/algorithm/everyday-0008/</url>
+      
+        <content type="html"><![CDATA[<h2 id="题目：两数之和"><a href="#题目：两数之和" class="headerlink" title="题目：两数之和"></a>题目：两数之和</h2><h3 id="给定一个整数数组-nums-和一个整数目标值-target，请你在该数组中找出-和为目标值-target-的那-两个-整数，并返回它们的数组下标"><a href="#给定一个整数数组-nums-和一个整数目标值-target，请你在该数组中找出-和为目标值-target-的那-两个-整数，并返回它们的数组下标" class="headerlink" title="给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target  的那 两个 整数，并返回它们的数组下标"></a>给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target  的那 两个 整数，并返回它们的数组下标</h3><h3 id="你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。"><a href="#你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。" class="headerlink" title="你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。"></a>你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。</h3><h3 id="你可以按任意顺序返回答案"><a href="#你可以按任意顺序返回答案" class="headerlink" title="你可以按任意顺序返回答案"></a>你可以按任意顺序返回答案</h3><h3 id="例1："><a href="#例1：" class="headerlink" title="例1："></a>例1：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入：nums = [2,7,11,15], target = 9</span><br><span class="line">输出：[0,1]</span><br><span class="line">解释：因为 nums[0] + nums[1] == 9 ，返回 [0, 1] 。</span><br></pre></td></tr></table></figure><h3 id="例2："><a href="#例2：" class="headerlink" title="例2："></a>例2：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：nums = [3,2,4], target = 6</span><br><span class="line">输出：[1,2]</span><br></pre></td></tr></table></figure><h3 id="解："><a href="#解：" class="headerlink" title="解："></a>解：</h3><p>遍历过的结果都存放在map中，之后的每个数都和目标数求差去map中get</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">public static int[] twoSum(int[] nums, int target) &#123;</span><br><span class="line">        Map&lt;Integer, Integer&gt; map = new HashMap&lt;&gt;();</span><br><span class="line">        for (int i = 0; i &lt; nums.length; i++) &#123;</span><br><span class="line">            if (map.containsKey(target - nums[i])) &#123;</span><br><span class="line">                return new int[]&#123;map.get(target - nums[i]), i&#125;;</span><br><span class="line">            &#125;</span><br><span class="line">            map.put(nums[i], i);</span><br><span class="line">        &#125;</span><br><span class="line">        return new int[]&#123;-1, -1&#125;;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><hr><p>好好学习，天天向上</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JAVA </tag>
+            
+            <tag> 算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Go语言常用命令</title>
       <link href="/2022/12/13/go/common_commands/"/>
       <url>/2022/12/13/go/common_commands/</url>
