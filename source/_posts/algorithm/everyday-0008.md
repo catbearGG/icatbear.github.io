@@ -2,14 +2,13 @@
 title: 每日一道算法题：「两数之和」
 date: 2023-03-13 12:00
 tags:
-
 - JAVA
 - 算法
-  categories:
-- 算法
-  top_img: /img/right_spider_man.jpeg
-  cover: /img/algorithm_cover_img.jpg
-  comments: true
+categories:
+- 算法 
+top_img: /img/right_spider_man.jpeg
+cover: /img/algorithm_cover_img.jpg
+comments: true
 
 ---
 
