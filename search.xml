@@ -4,6 +4,60 @@
   
     
     <entry>
+      <title>每日一道算法题：「整数反转」</title>
+      <link href="/2023/03/17/algorithm/everyday-0011/"/>
+      <url>/2023/03/17/algorithm/everyday-0011/</url>
+      
+        <content type="html"><![CDATA[<h2 id="题目：整数反转"><a href="#题目：整数反转" class="headerlink" title="题目：整数反转"></a>题目：整数反转</h2><h3 id="给你一个-32-位的有符号整数-x-，返回将-x-中的数字部分反转后的结果。"><a href="#给你一个-32-位的有符号整数-x-，返回将-x-中的数字部分反转后的结果。" class="headerlink" title="给你一个 32 位的有符号整数 x ，返回将 x 中的数字部分反转后的结果。"></a>给你一个 32 位的有符号整数 x ，返回将 x 中的数字部分反转后的结果。</h3><h3 id="如果反转后整数超过-32-位的有符号整数的范围-−231-231-−-1-，就返回-0。"><a href="#如果反转后整数超过-32-位的有符号整数的范围-−231-231-−-1-，就返回-0。" class="headerlink" title="如果反转后整数超过 32 位的有符号整数的范围 [−231,  231 − 1] ，就返回 0。"></a>如果反转后整数超过 32 位的有符号整数的范围 [−231,  231 − 1] ，就返回 0。</h3><h3 id="例1："><a href="#例1：" class="headerlink" title="例1："></a>例1：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：x = 123</span><br><span class="line">输出：321</span><br></pre></td></tr></table></figure><h3 id="例2："><a href="#例2：" class="headerlink" title="例2："></a>例2：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：x = 120</span><br><span class="line">输出：21</span><br></pre></td></tr></table></figure><h3 id="解："><a href="#解：" class="headerlink" title="解："></a>解：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">public static int reverse(int x) &#123;</span><br><span class="line">    long res = 0;</span><br><span class="line">    while (x != 0) &#123;</span><br><span class="line">        res = res * 10 + x % 10;</span><br><span class="line">        x /= 10;</span><br><span class="line">    &#125;</span><br><span class="line">    return (int) res == res ? (int) res : 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr><p>好好学习，天天向上</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JAVA </tag>
+            
+            <tag> 算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>每日一道算法题：「反转字符串」</title>
+      <link href="/2023/03/16/algorithm/everyday-0010/"/>
+      <url>/2023/03/16/algorithm/everyday-0010/</url>
+      
+        <content type="html"><![CDATA[<h2 id="题目：反转字符串"><a href="#题目：反转字符串" class="headerlink" title="题目：反转字符串"></a>题目：反转字符串</h2><h3 id="编写一个函数，其作用是将输入的字符串反转过来。输入字符串以字符数组-s-的形式给出"><a href="#编写一个函数，其作用是将输入的字符串反转过来。输入字符串以字符数组-s-的形式给出" class="headerlink" title="编写一个函数，其作用是将输入的字符串反转过来。输入字符串以字符数组 s 的形式给出"></a>编写一个函数，其作用是将输入的字符串反转过来。输入字符串以字符数组 s 的形式给出</h3><h3 id="不要给另外的数组分配额外的空间，你必须原地修改输入数组、使用-O-1-的额外空间解决这一问题。"><a href="#不要给另外的数组分配额外的空间，你必须原地修改输入数组、使用-O-1-的额外空间解决这一问题。" class="headerlink" title="不要给另外的数组分配额外的空间，你必须原地修改输入数组、使用 O(1) 的额外空间解决这一问题。"></a>不要给另外的数组分配额外的空间，你必须原地修改输入数组、使用 O(1) 的额外空间解决这一问题。</h3><h3 id="例1："><a href="#例1：" class="headerlink" title="例1："></a>例1：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：s = [&quot;h&quot;,&quot;e&quot;,&quot;l&quot;,&quot;l&quot;,&quot;o&quot;]</span><br><span class="line">输出：[&quot;o&quot;,&quot;l&quot;,&quot;l&quot;,&quot;e&quot;,&quot;h&quot;]</span><br></pre></td></tr></table></figure><h3 id="例2："><a href="#例2：" class="headerlink" title="例2："></a>例2：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：s = [&quot;H&quot;,&quot;a&quot;,&quot;n&quot;,&quot;n&quot;,&quot;a&quot;,&quot;h&quot;]</span><br><span class="line">输出：[&quot;h&quot;,&quot;a&quot;,&quot;n&quot;,&quot;n&quot;,&quot;a&quot;,&quot;H&quot;]</span><br></pre></td></tr></table></figure><h3 id="解："><a href="#解：" class="headerlink" title="解："></a>解：</h3><p>直接遍历，然后换位</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">public static void reverseString(char[] s) &#123;</span><br><span class="line">    for (int i = 0; i &lt; s.length / 2; i++) &#123;</span><br><span class="line">        char c = s[s.length - i - 1];</span><br><span class="line">        s[s.length - i - 1] = s[i];</span><br><span class="line">        s[i] = c;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="解2"><a href="#解2" class="headerlink" title="解2:"></a>解2:</h3><p>还有递归的方法，</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">public static void reverseString(char[] s) &#123;</span><br><span class="line">    reverseStringHandler(s, 0, s.length - 1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public static void reverseStringHandler(char[] s, int left, int right) &#123;</span><br><span class="line">    if (left &gt;= right) &#123;</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line">    char temp = s[left];</span><br><span class="line">    s[left] = s[right];</span><br><span class="line">    s[right] = temp;</span><br><span class="line">    reverseStringHandler(s, left + 1, right - 1);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr><p>好好学习，天天向上</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JAVA </tag>
+            
+            <tag> 算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>每日一道算法题：「旋转图像」</title>
       <link href="/2023/03/15/algorithm/everyday-0009/"/>
       <url>/2023/03/15/algorithm/everyday-0009/</url>
