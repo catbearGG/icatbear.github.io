@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>每日一道算法题：「字符串中的第一个唯一字符」</title>
+      <link href="/2023/04/12/algorithm/everyday-0012/"/>
+      <url>/2023/04/12/algorithm/everyday-0012/</url>
+      
+        <content type="html"><![CDATA[<h2 id="题目：字符串中的第一个唯一字符"><a href="#题目：字符串中的第一个唯一字符" class="headerlink" title="题目：字符串中的第一个唯一字符"></a>题目：字符串中的第一个唯一字符</h2><h3 id="给定一个字符串-s-，找到-它的第一个不重复的字符，并返回它的索引-。如果不存在，则返回-1-。"><a href="#给定一个字符串-s-，找到-它的第一个不重复的字符，并返回它的索引-。如果不存在，则返回-1-。" class="headerlink" title="给定一个字符串 s ，找到 它的第一个不重复的字符，并返回它的索引 。如果不存在，则返回 -1 。"></a>给定一个字符串 s ，找到 它的第一个不重复的字符，并返回它的索引 。如果不存在，则返回 -1 。</h3><h3 id="例1："><a href="#例1：" class="headerlink" title="例1："></a>例1：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: s = &quot;leetcode&quot;</span><br><span class="line">输出: 0</span><br></pre></td></tr></table></figure><h3 id="例2："><a href="#例2：" class="headerlink" title="例2："></a>例2：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: s = &quot;loveleetcode&quot;</span><br><span class="line">输出: 2</span><br></pre></td></tr></table></figure><h3 id="解："><a href="#解：" class="headerlink" title="解："></a>解：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">public static int firstUniqChar(String s) &#123;</span><br><span class="line">    char[] chars = s.toCharArray();</span><br><span class="line">    for (int i = 0; i &lt; chars.length; i++) &#123;</span><br><span class="line">        char c = chars[i];</span><br><span class="line">        //直接使用JAVA API进行判断</span><br><span class="line">        if (s.indexOf(c) == s.lastIndexOf(c)) &#123;</span><br><span class="line">            return i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return -1;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><hr><p>好好学习，天天向上</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JAVA </tag>
+            
+            <tag> 算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>每日一道算法题：「整数反转」</title>
       <link href="/2023/03/17/algorithm/everyday-0011/"/>
       <url>/2023/03/17/algorithm/everyday-0011/</url>
